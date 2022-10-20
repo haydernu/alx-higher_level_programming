@@ -111,8 +111,8 @@ def recursive_solve(board, row, queens, solutions):
         solutions
     """
     if queens == len(board):
-       solutions.append(get_solution(board))
-       return (solutions)
+        solutions.append(get_solution(board))
+        return (solutions)
 
     for c in range(len(board)):
         if board[row][c] == " ":
