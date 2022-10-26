@@ -6,5 +6,3 @@
 class BaseGeometry:
     """Represent base geometry."""
     pass
-Footer
-© 2022 GitHub, Inc.
