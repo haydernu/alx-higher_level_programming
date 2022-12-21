@@ -1,5 +1,9 @@
 #!/usr/bin/node
 
+/**
+ * a script that prints a square
+ **/
+
 const inputSize = parseInt(process.argv[2]);
 let squareIndicator = '';
 
