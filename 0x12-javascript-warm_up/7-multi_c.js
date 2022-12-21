@@ -9,5 +9,4 @@ if (isNaN(userArgs)) {
 while (argsCount < userArgs) {
   console.log('C is fun');
   argsCount++;
-
 }
