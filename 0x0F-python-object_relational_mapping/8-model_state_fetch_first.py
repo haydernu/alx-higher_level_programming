@@ -2,7 +2,6 @@
 """
 Prints the first State object from the database hbtn_0e_6_usa
 """
-
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -14,5 +13,7 @@ if __name__ == '__main__':
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
+
     state = session.query(State).order_by(State.id).first()
+    
     print("Nothing" if not state else "{}: {}".format(state.id, state.name))
