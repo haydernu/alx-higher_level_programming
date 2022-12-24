@@ -1,6 +1,3 @@
 #!/usr/bin/node
-const fs = require('fs');
-
-const fArg = fs.readFileSync(process.argv[2]).toString();
-const sArg = fs.readFileSync(process.argv[3]).toString();
-fs.writeFileSync(process.argv[4], fArg + sArg);
+const cmd = `cat ${process.argv[2]} ${process.argv[3]} > ${process.argv[4]}`;
+require('child_process').execSync(cmd).toString('UTF-8');
