@@ -15,6 +15,7 @@ if __name__ == "__main__":
     Access to the database and get the cities
     from the database.
     """
+    
     db_uri = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
         argv[1], argv[2], argv[3])
     engine = create_engine(db_uri)
