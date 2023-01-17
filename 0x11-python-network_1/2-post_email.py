@@ -6,7 +6,6 @@
 - takes email as a parameter
 - displays the body of the response
 """
-
 import sys
 import urllib.parse
 import urllib.request
